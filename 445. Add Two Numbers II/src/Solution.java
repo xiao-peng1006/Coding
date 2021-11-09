@@ -20,8 +20,9 @@ class Solution {
             carry = sum/10;
             cur.next = new ListNode(sum%10);
             if (p != null) p = p.next;
-            if (q != null) q = q.next;
-            cur = cur.next;
+            if (q != null) q = q.next;160. Intersection of Two Linked Lists
+
+                    cur = cur.next;
         }
 
         if (carry != 0) {
